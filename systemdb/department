@@ -1,0 +1,127 @@
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+오류 발생 명령행: 10 열: 75
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+Table DEPARTMENT이(가) 생성되었습니다.
+
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+오류 발생 명령행: 10 열: 75
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+오류 발생 명령행: 10 열: 75
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+오류 발생 명령행: 10 열: 75
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+
+COMMIT;
+오류 발생 명령행: 11 열: 24
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+
+COMMIT;
+오류 발생 명령행: 11 열: 24
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+
+COMMIT;
+오류 발생 명령행: 11 열: 24
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+명령의 3 행에서 시작하는 중 오류 발생 -
+CREATE TABLE department(
+    deptid NUMBER PRIMARY KEY,   --기본키
+    deptname VARCHAR2(20) NOT NULL, --NULL 불허
+    location VARCHAR2(20) NOT NULL
+)
+오류 보고 -
+ORA-00955: 기존의 객체가 이름을 사용하고 있습니다.
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+
+COMMIT;
+오류 발생 명령행: 11 열: 24
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+
+COMMIT;
+오류 발생 명령행: 11 열: 24
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
+
+명령의 10 행에서 시작하는 중 오류 발생 -
+INSERT INTO department(deptid, deptname, location)
+VALUES (10, '전산팀', '서울);
+
+COMMIT;
+오류 발생 명령행: 11 열: 24
+오류 보고 -
+SQL 오류: ORA-01756: 단일 인용부를 지정해 주십시오
+01756. 00000 -  "quoted string not properly terminated"
+*Cause:    
+*Action:
