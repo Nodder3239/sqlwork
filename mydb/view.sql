@@ -6,5 +6,19 @@ AS SELECT * FROM customer
     
 SELECT * FROM vw_customer;
 
+-- 이름이 김연아를 신유빈으로 변경함
+UPDATE vw_customer
+    SET name = '신유빈'
+    WHERE name = '김연아';
+
+-- 고객 아이디가 3인 고객을 삭제
+-- 참조하고 있는 orders 테이블이 있어서 삭제 불가
+DELETE FROM vw_customer WHERE custid = 3;
+
+
+
+
 -- VIEW 삭제
-DROP VIEW vw_customer
+DROP VIEW vw_customer;
+
+COMMIT;
