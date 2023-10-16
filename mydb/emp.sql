@@ -16,6 +16,14 @@ INSERT INTO emp VALUES (103, '박신입', '여자', null, '2023-10-01');
 COMMIT;
 
 SELECT * FROM emp;
+-- 급여가 가장 많은 사원의 이름과 급여를 검색하시오
+-- 서브쿼리(subquery), 중첩쿼리(메인쿼리, 서브쿼리)
+SELECT ename, salary FROM emp WHERE salary = (SELECT MAX(salary) FROM emp);
+
+-- 급여가 가장 많은 사원과 가장 적은 사원의 이름과 급여를 검색하시오
+SELECT ename, salary FROM emp 
+WHERE salary = (SELECT MAX(salary) FROM emp) 
+   OR salary = (SELECT MIN(salary) FROM emp);
 
 -- 1. 사원을 입사일 순으로 정렬하시오(오름차순 정렬)
 SELECT * FROM emp ORDER BY hire_date;

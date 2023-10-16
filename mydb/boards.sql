@@ -22,10 +22,19 @@ VALUES (seq_bno.NEXTVAL, 'smartPhone', '삼성 갤럭시 S21입니다', 'today', SYSDATE
 SELECT * FROM boards ORDER BY bno DESC;
 
 COMMIT;
+ROLLBACK;
 
 SELECT * FROM boards
 WHERE bwriter = 'sky123'
 ORDER BY bno DESC;
 
+-- 글번호 5번의 제목을 '아이폰'으로 변경
+UPDATE boards set btitle='아이폰 15'
+, bcontent = '아이폰 15입니다'
+where bno=5;
+
 DROP TABLE boards;
-DELETE FROM boards WHERE bno = 5
+DELETE FROM boards WHERE bno = 6;
+UPDATE boards set bno=5 where bno=7;
+
+DELETE FROM boards WHERE bno = 1;
