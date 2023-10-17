@@ -21,8 +21,40 @@ VALUES (seq_rno.NEXTVAL, '100002', 'sky123', '게임할 맛 납니다.');
 commit;
 SELECT * FROM product_review;
 
-DROP SEQUENCE seq_review;
+-- 테이블은 유지하고 데이터 전체 삭제
+TRUNCATE TABLE product_review;
+
+-- 시퀀스 삭제
+DROP SEQUENCE seq_rno;
 
 -- 상품 코드 '100001'이고, 회원 아이디가 'cloud100' 상품의 정보를 출력하시오
 SELECT * FROM product_review 
 WHERE product_code = '100001' AND member_id = 'cloud100';
+
+-- 상품 아이템 - 3개, 리뷰있는 아이템 - 2개
+-- 리뷰가 있는 상품을 검색하시오(동등 조인)
+-- 조건일치 : a테이블의 기본키 = b테이블의 외래키
+SELECT * FROM product a, product_review b WHERE a.product_code = b.product_code;
+
+-- 표준 방식 - 내부조인(INNER JOIN)
+SELECT * FROM product a JOIN product_review b
+ON a.product_code = b.product_code;
+
+-- 리뷰의 유무에 관계없이 상품의 정보를 검색하시오
+-- 동등 조인 방식(Product의 상품은 모두 출력되고,
+-- 리뷰는 있든 없든 관계없음, 리뷰가 없으면 NULL로 출력됨)
+SELECT * FROM product a, product_review b 
+WHERE a.product_code = b.product_code(+);
+
+-- 표준 방식(외부 조인 - OUTER JOIN)
+SELECT * FROM product a LEFT JOIN product_review b
+ON a.product_code = b.product_code;
+
+SELECT b.product_code,
+       b.product_name,
+       b.price,
+       a.member_id,
+       a.content,
+       a.regdate
+FROM product_review a RIGHT JOIN product b
+ON a.product_code = b.product_code;
