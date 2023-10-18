@@ -17,5 +17,8 @@ VALUES (seq.NEXTVAL, '공지 사항', '천장 에이컨 청소합니다.', 'admin0000');
 select * from board
 ORDER BY bno DESC;
 
+DROP SEQUENCE seq;
+
 commit;
 
+UPDATE board SET bno = 4 WHERE bno = 6;
