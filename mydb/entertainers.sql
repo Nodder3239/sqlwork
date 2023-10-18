@@ -54,3 +54,4 @@ WHERE a.name = b.ename;
 SELECT b.ename 이름, a.birthday 생년월일, b.jobname 직업
 FROM entertainer a JOIN job b
  ON a.name = b.ename;
+ 
