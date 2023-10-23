@@ -15,6 +15,8 @@ insert into news(title, content, img)
 values ('정치 뉴스', '이스라엘과 팔레스타인 전쟁.', 'war.jpg');
 insert into news(title, content, img)
 values ('스포츠 뉴스', '한국과 베트남 축구 성적 6:0.', 'soccer.jpg');
+insert into news(title, content, img)
+values ('과학 뉴스', '협동로봇, 청소 서비스로봇.', 'robot.png');
 
 select * from news;
 
