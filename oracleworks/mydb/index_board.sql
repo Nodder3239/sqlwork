@@ -1,4 +1,6 @@
 -- 실행 계획 : 옵티마이저
+DESC PLAN_TABLE;
+
 SELECT * FROM board;
 
 -- 작성자가 admin0000인 게시글 검색
