@@ -19,3 +19,5 @@ select * from student;
 commit;
 
 drop table student;
+
+-- 혼자 해본거임
