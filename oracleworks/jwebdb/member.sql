@@ -17,5 +17,11 @@ VALUES (seq_mno.NEXTVAL, 'khit', 'm1234567', '김기용', 'khit@gmail.com', '남');
 
 COMMIT;
 
-SELECT * FROM member;
+SELECT * FROM member ORDER BY mno;
+
+-- id가 'khit'인 회원의 정보
+SELECT * FROM member WHERE id = 'khit';
+
+-- id와 passwd가 일치하는 회원 찾기
+SELECT * FROM member WHERE id = 'khit' and passwd ='m1234567';
 
